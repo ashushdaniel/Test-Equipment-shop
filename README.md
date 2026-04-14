@@ -12,7 +12,7 @@ a test project presenting a shop equipment and player with stats
 the shop holds a List of EquipmentData Scriptable Objects for the equipments you can buy. <br>
 when you buy an item it goes to your inventory, in a List of EquipmentData. <br>
 when you equip an equipment from your inventory, it adds its bonuses to your Stats Scriptable Objects. <br>
-the playerMovement script uses GetComponent<playerStats> to access your movementSpeed stat, in order to determine your extra speed.
+the playerMovement script uses GetComponent<playerStats> to access your movementSpeed stat, in order to determine your extra speed. <br>
 (i could make another class that takes your movementSpeed stat and adds it to your extra speed in PlayerMovement.cs, but i thought it would be more clean for the playerMovement to take it itself, since it is a core stat.)
 
 ## Limitations
