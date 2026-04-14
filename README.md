@@ -9,5 +9,5 @@ I would use one instead of MonoBehaviour if I want to store data, such as equipm
 
 Q2 - Explain the Single Responsibility Principle in your own words. How would you extend
 your system to support new stat types without rewriting existing code? <br>
-**The single Responsibility Principle is a principle means that every script only handles one particular action, like PlayerMovement. it is useful to keep the code clean and not to ruin one system when working on another one.<br>
-I would make a Scriptable object called "StatData", and a MonoBehavior script called "unitStats" that will be attached to every unit prefab, that holds a List of StatData, and i will just add new StatData Scriptable to the list with the new dataType**
+**The single Responsibility Principle is a principle means that every script only handles one particular action, like PlayerMovement. it is useful to keep the code clean and not to ruin one system when working on another.<br>
+I would make a Scriptable object called "StatData", and a MonoBehavior script called "unitStats" that will be attached to every unit prefab, that holds a List of StatData, and i will just add new StatData Scriptable objects to the list with the new dataType**
