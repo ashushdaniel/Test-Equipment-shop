@@ -1,6 +1,23 @@
 # Test-Equipment-shop
 a test project presenting a shop equipment and player with stats
 
+## 📂 Project Structure 
+   - /Assets
+     -  /Prefabs       # Reusable game objects (title bars, coin)
+     -  /Scriptables   # Data-driven architecture (equipment, stats)
+     -  /Scripts       # C# scripts
+     -  /Sprites       # Sprites (downloaded from the internet)
+
+## how systems work
+the shop holds a List of EquipmentData Scriptable Objects for the equipments you can buy. <br>
+when you buy an item it goes to your inventory, in a List of EquipmentData. <br>
+when you equip an equipment from your inventory, it adds its bonuses to your Stats Scriptable Objects. <br>
+the playerMovement script uses GetComponent<playerStats> to access your movementSpeed stat, in order to determine your extra speed.
+
+## Limitations
+if the test would specify more tasks i would do them too, no problem (;
+there was no limitation in the execution of this simple test.
+
 ## Theory Questions
 Q1 - What is a ScriptableObject and why is it useful? When would you use one instead of a
 MonoBehaviour?<br>
